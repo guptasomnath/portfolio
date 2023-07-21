@@ -1,0 +1,166 @@
+.sectionDiv {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeIn 1s;
+  flex-grow: 1;
+}
+
+.stylishRedious{
+ 
+  border-radius: 50%;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 10;
+  }
+}
+
+.profileIcon{
+  height: 300px;
+  width: 300px;
+  border: 2px solid rgb(196, 191, 191);
+  padding: 2px;
+}
+
+@keyframes iconAnimation {
+  from {
+  }
+  to {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+.mobilePersonDetailsDiv {
+  display: none;
+}
+
+.textDiv p {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.textDiv span {
+  color: #4071f4;
+}
+
+.contactBtn {
+  padding: 12px 40px;
+  font-size: 15px;
+  border: 1px solid #4071f4;
+  background-color: #4071f4;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 12px;
+  transition: all 0.5s;
+}
+
+.contactBtn:hover {
+  background-color: rgb(105, 99, 99);
+  color: #fff;
+  border: 1px solid rgb(105, 99, 99);
+}
+
+.cvBtn {
+  padding: 12px 23px;
+  font-size: 15px;
+  border: 1px solid #a3a5a4;
+  background-color: transparent;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.cvBtn:hover {
+  background-color: rgb(105, 99, 99);
+  color: #fff;
+}
+
+/*This disign for Contact component {Start}*/
+.contactMeDiv {
+  padding: 0;
+}
+/*This design for Contact component {End}*/
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+  .sectionDiv {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .profileIconDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobilePersonDetailsDiv {
+    display: block;
+    text-align: center;
+  }
+
+  .mobilePersonDetailsDiv p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+
+  .mobilePersonDetailsDiv label {
+    line-height: 20px;
+    font-size: 15px;
+    color: gray;
+  }
+
+  .profileIcon {
+    height: 165px;
+    width: 165px;
+    /*border: 1px solid transparent;*/
+  }
+
+  .textDiv p {
+    display: none;
+  }
+
+  .buttonsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactBtn {
+    font-size: 13px;
+    padding: 10px 37px;
+  }
+
+  .cvBtn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  /*This disign for Contact component {Start}*/
+  .contactMeDiv {
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+  }
+  /*This design for Contact component {End}*/
+}

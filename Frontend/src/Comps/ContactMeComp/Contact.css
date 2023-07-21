@@ -1,0 +1,26 @@
+.contactMeDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.contactMeDiv label {
+  color: dimgrey;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.contactMeDiv .icons{
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+  .contactMeDiv label {
+    font-size: 15px;
+  }
+
+  .textAndImages {
+    justify-content: center;
+  }
+}

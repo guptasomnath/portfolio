@@ -1,0 +1,113 @@
+.navBar {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.menuIconAndCloseIcon {
+  width: 21px;
+  padding: 0 10px;
+  display: none;
+}
+
+.menuItems img {
+  display: none;
+  z-index: 1;
+}
+
+.logoDiv label {
+  font-weight: 501;
+  -webkit-font-weight: 500;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.menuItemsDiv {
+  display: flex;
+}
+
+.menuItemsDiv a {
+  text-decoration: none;
+  padding-left: 30px;
+  color: black;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+  .navBar {
+    background-color: #fff;
+    box-shadow: 0 0 3px #a3a5a4;
+    width: 100%;
+    display: inline;
+  }
+
+  .menuItemsDiv {
+    display: block;
+    transform: translateY(-300px);
+    z-index: 0;
+    height: 0;
+  }
+
+  @keyframes slideDown {
+    from {
+      height: 0px;
+    }
+
+    to {
+      height: 158px;
+      background-color: transparent;
+      transform: translateY(0);
+      z-index: 2;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      height: 158px;
+      transform: translateY(0);
+      z-index: 0;
+    }
+
+    to {
+      height: 0;
+      transform: translateY(-300px);
+    }
+  }
+
+  .menuItemsDiv a {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+  }
+
+  .menuItems {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .menuItems img {
+    width: 20px;
+    padding-left: 10px;
+    display: block;
+  }
+
+  .logoDiv {
+    /*padding-top: 19px;*/
+    display: flex;
+    align-items: center;
+  }
+
+  .logoDiv label {
+    padding-left: 8px;
+  }
+
+  .logoDiv img {
+    display: block;
+  }
+}

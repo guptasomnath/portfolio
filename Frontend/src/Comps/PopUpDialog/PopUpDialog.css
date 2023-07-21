@@ -1,0 +1,84 @@
+.popUpDialog {
+  height: 100dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+@supports not (height: 100dvh){
+  .popUpDialog {
+    height: 100%;
+  }
+}
+
+.dialogBody {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+}
+
+.dialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid rgb(232, 225, 225);
+}
+
+.dialogHead label {
+  font-weight: bold;
+  color: dimgray;
+}
+
+.dialogHead img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.dialogContent {
+  /*display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;*/
+  margin: 8px auto;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+.imageAndText{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.imageAndText img{
+  width: 25px;
+  cursor: pointer;
+}
+
+.imageAndText span{
+  font-weight: bold;
+  color: dimgray;
+  margin-left: 15px;
+}
+
+/*This disign for Contact component {Start}*/
+/*.contactMeDiv img {
+  width: 35px;
+}*/
+/*This design for Contact component {End}*/
+
+/*@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+  .dialogBody {
+    width: 95%;
+  }
+}*/

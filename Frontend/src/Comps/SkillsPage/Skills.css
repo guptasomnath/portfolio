@@ -1,0 +1,59 @@
+.skillsDiv {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  flex-grow: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 10;
+  }
+}
+
+.skillsDiv label {
+  color: darkgray;
+  width: 50%;
+  text-align: center;
+}
+
+.listViewDiv {
+  width: 72%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+  .skillsDiv {
+    padding: 15px 0;
+  }
+  .skillsDiv label {
+    width: 95%;
+  }
+
+  .listViewDiv {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 352px) {
+  .listViewDiv {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

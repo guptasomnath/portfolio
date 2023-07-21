@@ -1,0 +1,113 @@
+.cardViewDiv{
+    box-shadow: 0 0 3px rgb(188, 184, 184);
+    margin: 15px 0;
+    cursor: pointer;
+    height: fit-content;
+    width: 20rem;
+    transition: all 300ms;
+    scale:calc(1);
+}
+
+.cardViewDiv:hover{
+    box-shadow: 0 0 12px rgb(188, 184, 184);
+    scale:calc(1.02);
+}
+
+.placeholder-image{
+   background-color: #9c999a;
+   width: 20rem;
+   aspect-ratio: 16 / 9;
+   margin-bottom: 5px;
+}
+
+
+.cardViewThumnails{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.videoDetails{
+    padding: 15px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*border: 1px solid gray;*/
+}
+
+.titleSubtitleDiv{
+    /*border: 1px solid red;*/
+    height: 100%;
+    overflow:hidden;
+}
+
+.videoDetails h1{
+    font-size: 20px;
+    padding-bottom: 8px;
+    color: #212529;
+}
+
+.videoDetails label{
+    font-size: 15px;
+    line-height: 23px;
+    color: #5c5b5c;
+    text-align: left;
+    /*text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2;
+    -webkit-box-orient: vertical;*/
+}
+
+.cardViewFooter{
+    display: flex;
+    margin-top: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardViewFooter label{
+   color: #82757d;
+   font-size: 12px;
+}
+
+.cardViewFooter button{
+    margin: -2px;
+    background-color: #fff;
+    color: #82757d;
+    padding: 6px 35px;
+    text-align: center;
+    border: 1px solid #6c757d;
+    cursor: pointer;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.cardViewFooter button:hover{
+    background-color: #5c5b5c;
+    color: #fff;
+}
+
+.watchBtn {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-right: 12px;
+}
+
+.bookmarkBtn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px){
+    .cardViewDiv{
+        margin: 15px;
+        width: 90%;
+        scale:calc(1);
+    }
+
+    .placeholder-image{ 
+        width: 100%;
+     }
+}

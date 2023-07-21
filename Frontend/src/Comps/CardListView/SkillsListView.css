@@ -1,0 +1,25 @@
+.skillCardView{
+    position: relative;
+    box-shadow: 0 0 3px rgb(188, 184, 184);
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.skillCardView img{
+    width: 55px;
+    aspect-ratio: 1 / 1;
+}
+
+.skillCardView p{
+    font-weight: 500;
+    width: 100%;
+}

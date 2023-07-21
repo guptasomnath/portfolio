@@ -1,0 +1,65 @@
+
+.mainProjectContainer{
+ 
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+
+
+}
+
+.projectsDiv{
+    box-sizing: border-box;
+    width: 87%;
+    margin: 0 auto;
+    /*This is for computer view*/
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+    animation: fadeIn 0.8s;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.projectsLayout{
+  height: 79vh;
+  text-align: center;
+}
+
+.projectsLayout label{
+  font-size: 18px;
+  color: rgb(154, 150, 150);
+  font-weight: 400;
+  animation: fadeIn 0.8s infinite forwards alternate;
+}
+
+@keyframes fadeIn {
+
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 10;
+
+  }
+  
+}
+
+/*This is for mobile view*/
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+    .projectsDiv {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+

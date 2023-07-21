@@ -1,0 +1,59 @@
+.aboutPageDiv {
+  height: 79vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  animation: fadeIn 0.8s;
+  flex: 1;
+}
+
+@keyframes fadeId {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 10;
+  }
+}
+
+.aboutMeDiv {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutMeDiv label {
+  font-family: monospace;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.aboutMeDiv p {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  width: 69%;
+  text-align: center;
+  color: dimgrey;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px) {
+  .aboutMeDiv {
+    width: 100%;
+  }
+  .aboutMeDiv p {
+    width: 95%;
+    font-size: 15px;
+  }
+
+  .aboutMeDiv label {
+    font-size: 35px;
+  }
+
+}

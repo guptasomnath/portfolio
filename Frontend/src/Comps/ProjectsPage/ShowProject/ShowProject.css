@@ -1,0 +1,89 @@
+.showProjectDialog {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-sizing: border-box;
+  --maxCardandDescriptionH-- : 20rem;
+}
+
+.showProjectCardView{
+    width: 35rem;
+    max-height: var(--maxCardandDescriptionH--);
+    background-color: beige;
+    margin: 5px;
+    padding: 8px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding-bottom: 105px;
+    animation: dialogPopupAnimation 0.5s forwards;
+    -webkit-animation: dialogPopupAnimation 0.5s forwards;
+}
+
+@keyframes dialogPopupAnimation {
+    0%{
+        scale:calc(0);
+    }
+
+    100%{
+        scale:calc(1);
+    }
+}
+
+
+.showProjectNavBar{
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.showProjectNavBar img{
+    width: 25px;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.showProjectCardView h1{
+    font-size: 20px;
+    color: #212529;
+    padding-top: 8px;
+}
+
+.showProjectCardView .descriptionText{
+    font-size: 15px;
+    line-height: 23px;
+    color: #5c5b5c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 0;
+}
+
+.showProjectContent{
+    height: var(--maxCardandDescriptionH--);
+    padding: 0 25px;
+    padding-top: 8px;
+    padding-left: 28px;
+    padding-right: 28px;
+    overflow: scroll;
+}
+
+.showProjectFooter{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+@media only screen and (max-width: 480px), screen and (max-width: 668px){
+    .showProjectContent{
+        padding: 0 10px;
+    }
+    
+}
+
+
