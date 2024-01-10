@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+
+.descriptionText {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.customFullWidth {
+    width: calc(100% - 24px);
+}
+
+.shimmerAnimation{
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.textBold{
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+}
+
+.linkColor {
+    color: #0000EE;
+    /* text-decoration: underline; */
+}
+
+
+@keyframes skeleton-loading {
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.scrollbar-hide::-webkit-scrollbar{
+    display: none;
+}
+.scrollbar-hide{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
