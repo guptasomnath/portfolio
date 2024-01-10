@@ -1,2 +1,2 @@
-export const GET_PROJECTS_API = "https://docs.google.com/spreadsheets/d/185FHdyCVd9SA93oFv-Djq2tiuQfNxL85tdQdEoOzHeM/gviz/tq?tqx=out:csv&sheet=projects&tq=SELECT *";
-export const GET_BLOGS_API = "https://docs.google.com/spreadsheets/d/185FHdyCVd9SA93oFv-Djq2tiuQfNxL85tdQdEoOzHeM/gviz/tq?tqx=out:csv&sheet=blogs&tq=SELECT *";
+export const GET_PROJECTS_API = "https://docs.google.com/spreadsheets/d/1OAI0vuUYbM2dMoC4poycp1Jcg05cldKhTPy1H0KVLB4/gviz/tq?tqx=out:csv&sheet=projects&tq=SELECT *";
+export const GET_BLOGS_API = "https://docs.google.com/spreadsheets/d/1OAI0vuUYbM2dMoC4poycp1Jcg05cldKhTPy1H0KVLB4/gviz/tq?tqx=out:csv&sheet=blogs&tq=SELECT *";
